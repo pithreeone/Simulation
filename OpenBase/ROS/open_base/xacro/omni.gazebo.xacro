@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot name="open_base_sim" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:arg name="laser_visual" default="false"/>
+  <xacro:arg name="laser_visual" default="true"/>
   <xacro:arg name="imu_visual"   default="false"/>
 
   <!-- <gazebo>
@@ -65,10 +65,10 @@
     </sensor>
   </gazebo>
 
-  <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
+  <!-- <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
 
   <xacro:realsense_d435 sensor_name="d435" parent_link="base_link" rate="10">
     <origin rpy="0 0 0 " xyz="0 0 0.4"/>
-  </xacro:realsense_d435>
+  </xacro:realsense_d435> -->
 
 </robot>
